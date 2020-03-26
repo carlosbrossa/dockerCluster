@@ -32,7 +32,7 @@ Running images from repository:
   docker run -p 80:80 --network=redeCarlitao carlitosbrossa/ngnix
 ```
 
-Testing:
+## Testing:
 
 1 - access url http://localhost/players/seed for populate mongo collection
 2 - access url http://localhost/players for lista all collection created
