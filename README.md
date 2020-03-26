@@ -5,7 +5,7 @@ The docker-compose is not being used for learning reasons.
 ## This project contains:
 - java project with spring boot (3 instances in example)
 - image mongo db
-- image nginx configured with 
+- image nginx configured with load balancer
 
 ## initial configuration
 
