@@ -1,4 +1,4 @@
-# manualDockerCluster
+# dockerClusterManual
 Project run a app java in manual cluster with docker containers
 
 ## This project contains:
