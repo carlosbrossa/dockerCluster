@@ -1,5 +1,6 @@
 # dockerClusterManual
-Project run a app java in manual cluster with docker containers
+Project run a app java in manual cluster with docker containers. 
+The docker-compose is not being used for learning reasons.
 
 ## This project contains:
 - java project with spring boot (3 instances in example)
