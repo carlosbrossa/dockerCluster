@@ -1,4 +1,4 @@
-# clusterDockerManual
+# manualDockerCluster
 Project run a app java in manual cluster with docker containers
 
 ## This project contains:
@@ -31,3 +31,11 @@ Running images from repository:
   # nginx with load balance configuration
   docker run -p 80:80 --network=redeCarlitao carlitosbrossa/ngnix
 ```
+
+Testing:
+
+1 - access url http://localhost/players/seed for populate mongo collection
+2 - access url http://localhost/players for lista all collection created
+3 - Note that application logs must follow round robin algorithm for load balance
+
+
