@@ -34,8 +34,8 @@ Running images from repository:
 
 ## Testing:
 
-1. access url http://localhost/players/seed for populate mongo collection
-2. access url http://localhost/players for lista all collection created
-3. Note that application logs must follow round robin algorithm for load balance
+1) access url http://localhost/players/seed for populate mongo collection
+2) access url http://localhost/players for lista all collection created
+3) Note that application logs must follow round robin algorithm for load balance
 
 
