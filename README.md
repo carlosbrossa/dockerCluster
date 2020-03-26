@@ -1,4 +1,4 @@
-# dockerClusterManual
+# dockerCluster
 Project run a app java in manual cluster with docker containers. 
 The docker-compose is not being used for learning reasons.
 
