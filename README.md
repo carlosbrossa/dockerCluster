@@ -1,6 +1,5 @@
-# dockerCluster
+# dockerCluster MANUAL
 Project run a app java in manual cluster with docker containers. 
-The docker-compose is not being used for learning reasons.
 
 ## This project contains:
 - java project with spring boot (3 instances in example)
@@ -11,7 +10,7 @@ The docker-compose is not being used for learning reasons.
 
 If you want build images for learning:
 ```
-  docker build -f nginx.dockerfile -t your_docker_hub .  (inside docker folder)
+  docker build -f nginx.dockerfile -t your_docker_hub ../  (inside docker folder)
   docker build -f Dockerfile -t your_docker_hub .   (inside root project folder)
 ```
   _*** you need have a docker hub account_
@@ -32,6 +31,16 @@ Running images from repository:
   # nginx with load balance configuration
   docker run -p 80:80 --network=redeCarlitao carlitosbrossa/ngnix
 ```
+
+# dockerCluster by docker-compose
+
+
+```
+  docker-compose build  (inside root project folder)
+  docker-compose run    (inside root project folder)
+
+```
+
 
 ## Testing:
 
