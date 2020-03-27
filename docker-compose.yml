@@ -1,0 +1,63 @@
+version: '3'
+services: 
+    nginx:
+        build: 
+            dockerfile: ./docker/nginx.dockerfile
+            context: .
+        image: carlitosbrossa/ngnix
+        container_name: nginx
+        ports: 
+            - "80:80"
+        networks: 
+            - redeCarlitao
+        depends_on: 
+            - stock1
+            - stock2
+            - stock3
+    mongozao:
+        image: mongo
+        networks: 
+            - redeCarlitao
+        environment: 
+            - MONGO_INITDB_ROOT_USERNAME=root
+            - MONGO_INITDB_ROOT_PASSWORD=root
+    stock1:
+        build: 
+            dockerfile: Dockerfile
+            context: .
+        image: carlitosbrossa/stock
+        container_name: stock1
+        ports: 
+            - "8080"
+        networks: 
+            - redeCarlitao
+        depends_on: 
+            - mongozao
+    stock2:
+        build: 
+            dockerfile: Dockerfile
+            context: .
+        image: carlitosbrossa/stock
+        container_name: stock2
+        ports: 
+            - "8080"
+        networks: 
+            - redeCarlitao
+        depends_on: 
+            - mongozao
+    stock3:
+        build: 
+            dockerfile: Dockerfile
+            context: .
+        image: carlitosbrossa/stock
+        container_name: stock3
+        ports: 
+            - "8080"
+        networks: 
+            - redeCarlitao
+        depends_on: 
+            - mongozao
+networks: 
+    redeCarlitao:
+        driver: bridge
+        

@@ -1,5 +1,6 @@
 FROM openjdk:11
-COPY build/libs /usr/src/myapp
+RUN ls -a
+COPY ./build/libs /usr/src/myapp
 WORKDIR /usr/src/myapp
 
 EXPOSE 8080
