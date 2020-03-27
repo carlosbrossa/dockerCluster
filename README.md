@@ -1,4 +1,4 @@
-# dockerClusterManual
+# dockerCluster
 Project run a app java in manual cluster with docker containers. 
 The docker-compose is not being used for learning reasons.
 
@@ -11,8 +11,8 @@ The docker-compose is not being used for learning reasons.
 
 If you want build images for learning:
 ```
-  docker build -f nginx.dockerfile -t your_docker_hub .
-  docker build -f Dockerfile -t your_docker_hub .  
+  docker build -f nginx.dockerfile -t your_docker_hub .  (inside docker folder)
+  docker build -f Dockerfile -t your_docker_hub .   (inside root project folder)
 ```
   _*** you need have a docker hub account_
 
